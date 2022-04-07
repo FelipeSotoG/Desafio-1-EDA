@@ -43,3 +43,37 @@ Como sabemos los 3 metodos se comportan de una manera distinta, sin embargo, el 
 
 El estado inicial es ingresado manualmente y se comporta como una matriz y definimos que la funcion transicion es determinado por el ingreso de valor a la matriz
 y por ultimo para saber si el estado es un "estado final" tenemos que verificar 2 cosas, primero si se usaron todas las armas y segundo que todos los objetivos fueron "atacados".
+
+# video
+
+https://youtu.be/5GIPYUuEL50
+
+# autoevaluacion
+
+Felipe Soto
+A.+ 1.0
+B.+1.0
+C.+1.0
+D.+1.0
+E.+1.0
+
+Ignacio Cortes
+A.+ 1.0
+B.+0.9
+C.+1.0
+D.+1.0
+E.+1.0
+
+Hugo Ibarra
+A.+ 0.8
+B.+1.0
+C.+1.0
+D.+1.0
+E.+1.0
+
+Gianluca Olivares
+A.+ 0.9
+B.+1.0
+C.+0.9
+D.+1.0
+E.+1.0
