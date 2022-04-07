@@ -11,8 +11,11 @@ Para entender de mejor manera el problema se muestra el sgt ejemplo.
 Un comandante tiene 5 tanques, 2 aviones y 1 embarcación y se le indica que se enfrente a 3 objetivos con valores 5, 10 y 20. Cada tipo de arma tiene las siguientes probabilidades de éxito contra cada objetivo:
 
 Tipo de arma  | V1=5  | V2=10 | V3=20.
+______________________________________
 tanque       |   0.3  |   0.2 |   0.5.
+______________________________________
 aeronave     |  0.1   | 0.6   |   0.5.
+_________________________________________
 Buque de mar |  0.4   |   0.5 |   0.4.
 
 Una solución factible es asignar el buque de mar y un avión al objetivo de mayor valor (3). Esto da como resultado un valor de supervivencia esperado de {20 (0,6) (0,5) = 6}20(0,6)(0,5)=6. Luego, se podría asignar el avión restante y los 2 tanques al objetivo n.° 2, lo que daría como resultado un valor de supervivencia esperado de 10 (0,4) (0,8) ^ {2} = 2,56}10(0,4)(0,8)^{2}=2,56. Finalmente, los 3 tanques restantes se asignan al objetivo #1 que tiene un valor de supervivencia esperado de 5 (0,7) ^ {3} = 1,715}5(0,7)^{3}=1,715. Por lo tanto, tenemos un valor de supervivencia total esperada de { 6 + 2,56 + 1,715 = 10,275}6+2,56+1,715=10,275. Tenga en cuenta que se puede lograr una mejor solución asignando 3 tanques al objetivo n.º 1, 2 tanques y una embarcación al objetivo n.º 2 y 2 aviones al objetivo n.º 3, dando un valor de supervivencia esperado de 5(0,7)^{3}+10(0,5)(0,8)^{2}+20(0,5)^{2}=9,915}{ 5(0,7)^{3}+10(0,5)(0,8)^{2}+20(0,5)^{2}=9,915}.
