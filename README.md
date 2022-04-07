@@ -19,3 +19,4 @@ https://wikimedia.org/api/rest_v1/media/math/render/svg/6ad5d4a9aca9ce4614c777ed
 Tener en cuenta que minimizar el valor de supervivencia esperado es lo mismo que maximizar el daño esperado
 
 # La Solución
+
