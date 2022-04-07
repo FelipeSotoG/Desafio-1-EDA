@@ -23,12 +23,12 @@ Una solución factible es asignar el buque de mar y un avión al objetivo de may
 
 # La Solución
 
-La heuristica es la sumatoria de el valor del objetivo por la probabilidad de supervivencia, dado cuantas armas lo estan atacando.
 
 tenemos la formula matematica en la siguiente imagien.
 https://wikimedia.org/api/rest_v1/media/math/render/svg/74572279af9ae4c8d9099349fb1d8a320aba068a
+la cual en simples palabras es la heuristica a utilizar y cosnta de la sumatoria del valor del objetivo por la probabilidad de supervivencia, dado cuantas armas lo estan atacando.
 
-destacar que la formula matemática implementada, en donde se utiliza la probabilidad de que el objetivo pueda sobrevivir al ataque(probabilidad de supervivencia 1-p en donde p es la probabilidad de destrucción).
+Destacar que la formula matemática implementada, se utiliza la probabilidad de que el objetivo pueda sobrevivir al ataque(probabilidad de supervivencia 1-p en donde p es la probabilidad de destrucción).
 
 tenemos como restricciones las siguientes:
 https://wikimedia.org/api/rest_v1/media/math/render/svg/8683e61b76dfc758c77a0b6546cbee3c9a11697e
@@ -36,3 +36,10 @@ https://wikimedia.org/api/rest_v1/media/math/render/svg/6ad5d4a9aca9ce4614c777ed
 -La primera restricción requiere que el número de armas de cada tipo asignadas no exceda el número disponible
 -La segunda restricción es la restricción integra
 Tener en cuenta que minimizar el valor de supervivencia esperado es lo mismo que maximizar el daño esperado
+
+A nivel de solución se determina utilizar 3 metodos de busquedas, los cuales son Best first, Hill climbing y DFS, de los cuales se utilizará para el análisis el best first, par aluego realizar una revisión y pruebas de los 3 metodos determinando cual es el óptimo y como se comportan al problema expuesto.
+
+Como sabemos los 3 metodos se comportan de una manera distinta, sin embargo, el desarrollo de la heuristica y cómo se definen los datos es la misma, refiriendonos al estado incial, transicion y el determinar si es un estado final.
+
+El estado inicial es ingresado manualmente y se comporta como una matriz y definimos que la funcion transicion es determinado por el ingreso de valor a la matriz
+y por ultimo para saber si el estado es un "estado final" tenemos que verificar 2 cosas, primero si se usaron todas las armas y segundo que todos los objetivos fueron "atacados".
